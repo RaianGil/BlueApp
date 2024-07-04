@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BlueApp.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="BlueApp" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+        </Frame>
+        <StackLayout Padding="10,30,10,0">
+            <Label Text="Escanea el codigo del vehiculo" FontSize="Title" HorizontalTextAlignment="Center" Padding="0,10"/>
+            <Entry x:Name="carCode"  Placeholder="Codigo de vehiculo" Completed="Entry_Completed"/>
+            <StackLayout x:Name="slCarInfo" Padding="10,0" IsVisible="false">
+                <Label Text="Informacion del vehiculo" FontAttributes="Bold" Padding="0,10"/>
+                <Label Text="Marca:" FontAttributes="Bold"/>
+                <Label Text="" x:Name="lblMarca" FontSize="20" Padding="5,0,0,0"/>
+                <Label Text="Modelo:" FontAttributes="Bold"/>
+                <Label Text="" x:Name="lblModelo" FontSize="20" Padding="5,0,0,0"/>
+                <Label Text="Color:" FontAttributes="Bold"/>
+                <Label Text="" x:Name="lblColor" FontSize="20" Padding="5,0,0,0"/>
+                <Label Text="Año" FontAttributes="Bold"/>
+                <Label Text="" x:Name="lblYear" FontSize="20" Padding="5,0,0,0"/>
+                <Label Text="" x:Name="lblCode" FontSize="20" Padding="5,0,0,0" IsVisible="false"/>
+            </StackLayout>
+            <Button x:Name="btnPrint" Text="Imprimir" Pressed="Button_Pressed" IsVisible="false"/>
+        </StackLayout>
+        <Grid VerticalOptions="EndAndExpand">
+            <Label Text="Printer Name" />
+            <Entry x:Name="entPrinterName" />
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

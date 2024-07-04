@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:VerificadorGR"
+             mc:Ignorable="d"
+             x:Class="VerificadorGR.Views.PrecioDatosPage"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid VerticalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Entry x:Name="Prueba" />
+                    <Label 
+                        Text="Descripcion:"                
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="50"/>
+                    <Label 
+                        x:Name="lblDescripcion"
+                        Text="Producto no encontrado."
+                        TextColor="Red"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        FontSize="50"
+                        Margin="60,0,0,40"/>
+                    <Label
+                        x:Name="lblPrecioD"
+                        Text="Precio:"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Center"
+                        FontSize="50"/>
+                    <Label 
+                        x:Name="lblPrecio"
+                        Text="RD$ 798.00"                
+                        TextColor="Red"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="50"
+                        Margin="0,0,0,40"/>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
